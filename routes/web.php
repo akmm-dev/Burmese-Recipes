@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [GeneralController::class,'general'])->name('home');
+Route::get('', [GeneralController::class,'general'])->name('home');
 Route::get('/{Guid}',[GeneralController::class,'getItem'])->name('item');
